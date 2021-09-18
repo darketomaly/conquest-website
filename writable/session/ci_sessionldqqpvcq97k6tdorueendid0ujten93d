@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1631751007;_ci_previous_url|s:40:"http://localhost:8080/index.php/register";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:4:{s:8:"username";s:3:"asd";s:5:"email";s:9:"asd@c.com";s:8:"password";s:3:"asd";s:15:"passwordConfirm";s:1:"1";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:6:"errors";s:3:"old";}errors|s:26:"Passwords are not the same";

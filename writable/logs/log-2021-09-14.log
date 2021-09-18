@@ -1,0 +1,50 @@
+CRITICAL - 2021-09-14 19:25:30 --> Too few arguments to function App\Controllers\Prueba::Prueba(), 0 passed in C:\wamp64\www\Progra Web 2\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Prueba->Prueba()
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#5 {main}
+CRITICAL - 2021-09-14 19:25:41 --> Too few arguments to function App\Controllers\Prueba::Prueba(), 0 passed in C:\wamp64\www\Progra Web 2\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Prueba->Prueba()
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#5 {main}
+CRITICAL - 2021-09-14 19:26:43 --> Too few arguments to function App\Controllers\Prueba::Prueba(), 0 passed in C:\wamp64\www\Progra Web 2\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Prueba->Prueba()
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#5 {main}
+CRITICAL - 2021-09-14 19:27:57 --> Too few arguments to function App\Controllers\Prueba::prueba(), 0 passed in C:\wamp64\www\Progra Web 2\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Prueba->prueba()
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#5 {main}
+CRITICAL - 2021-09-14 19:27:58 --> Too few arguments to function App\Controllers\Prueba::prueba(), 0 passed in C:\wamp64\www\Progra Web 2\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Prueba->prueba()
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#5 {main}
+CRITICAL - 2021-09-14 19:32:48 --> Redefinition of parameter $text
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-09-14 20:46:22 --> Undefined variable: userName
+#0 C:\wamp64\www\Progra Web 2\app\Views\welcome_message.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 221, Array)
+#1 C:\wamp64\www\Progra Web 2\system\View\View.php(214): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\Progra Web 2\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\Progra Web 2\system\Common.php(1092): CodeIgniter\View\View->render('welcome_message', Array, true)
+#4 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message', Array)
+#5 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#6 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#10 {main}

@@ -1,0 +1,156 @@
+CRITICAL - 2021-09-17 18:44:59 --> Argument 3 passed to CodeIgniter\HTTP\Request::fetchGlobal() must be of the type int or null, array given, called in C:\wamp64\www\Progra Web 2\system\HTTP\IncomingRequest.php on line 590
+#0 C:\wamp64\www\Progra Web 2\system\HTTP\IncomingRequest.php(590): CodeIgniter\HTTP\Request->fetchGlobal('post', Array, Array, Array)
+#1 C:\wamp64\www\Progra Web 2\app\Controllers\Auth.php(51): CodeIgniter\HTTP\IncomingRequest->getPost(Array, Array, Array)
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Auth->AttemptRegister()
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#7 {main}
+CRITICAL - 2021-09-17 18:46:27 --> Argument 3 passed to CodeIgniter\HTTP\Request::fetchGlobal() must be of the type int or null, array given, called in C:\wamp64\www\Progra Web 2\system\HTTP\IncomingRequest.php on line 590
+#0 C:\wamp64\www\Progra Web 2\system\HTTP\IncomingRequest.php(590): CodeIgniter\HTTP\Request->fetchGlobal('post', Array, Array, Array)
+#1 C:\wamp64\www\Progra Web 2\app\Controllers\Auth.php(51): CodeIgniter\HTTP\IncomingRequest->getPost(Array, Array, Array)
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Auth->AttemptRegister()
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#7 {main}
+CRITICAL - 2021-09-17 18:47:23 --> Argument 3 passed to CodeIgniter\HTTP\Request::fetchGlobal() must be of the type int or null, array given, called in C:\wamp64\www\Progra Web 2\system\HTTP\IncomingRequest.php on line 590
+#0 C:\wamp64\www\Progra Web 2\system\HTTP\IncomingRequest.php(590): CodeIgniter\HTTP\Request->fetchGlobal('post', Array, Array, Array)
+#1 C:\wamp64\www\Progra Web 2\app\Controllers\Auth.php(51): CodeIgniter\HTTP\IncomingRequest->getPost(Array, Array, Array)
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Auth->AttemptRegister()
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#7 {main}
+CRITICAL - 2021-09-17 18:50:53 --> Argument 3 passed to CodeIgniter\HTTP\Request::fetchGlobal() must be of the type int or null, array given, called in C:\wamp64\www\Progra Web 2\system\HTTP\IncomingRequest.php on line 590
+#0 C:\wamp64\www\Progra Web 2\system\HTTP\IncomingRequest.php(590): CodeIgniter\HTTP\Request->fetchGlobal('post', Array, Array, Array)
+#1 C:\wamp64\www\Progra Web 2\app\Controllers\Auth.php(51): CodeIgniter\HTTP\IncomingRequest->getPost(Array, Array, Array)
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Auth->AttemptRegister()
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#7 {main}
+CRITICAL - 2021-09-17 18:52:06 --> Too few arguments to function App\Models\ProfileModel::RegisterToProfile(), 0 passed in C:\wamp64\www\Progra Web 2\app\Controllers\Auth.php on line 56 and exactly 1 expected
+#0 C:\wamp64\www\Progra Web 2\app\Controllers\Auth.php(56): App\Models\ProfileModel->RegisterToProfile()
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Auth->AttemptRegister()
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2021-09-17 18:52:51 --> Too few arguments to function App\Models\ProfileModel::RegisterToProfile(), 0 passed in C:\wamp64\www\Progra Web 2\app\Controllers\Auth.php on line 56 and exactly 1 expected
+#0 C:\wamp64\www\Progra Web 2\app\Controllers\Auth.php(56): App\Models\ProfileModel->RegisterToProfile()
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Auth->AttemptRegister()
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2021-09-17 19:49:03 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\Progra Web 2\app\Controllers\Home.php on line 13
+#0 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message', NULL)
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2021-09-17 19:52:20 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\Progra Web 2\app\Controllers\Home.php on line 13
+#0 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message', NULL)
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2021-09-17 19:52:46 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\Progra Web 2\app\Controllers\Home.php on line 13
+#0 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message', NULL)
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2021-09-17 19:52:47 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\Progra Web 2\app\Controllers\Home.php on line 13
+#0 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message', NULL)
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2021-09-17 19:52:49 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\Progra Web 2\app\Controllers\Home.php on line 13
+#0 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message', NULL)
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2021-09-17 19:52:52 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\Progra Web 2\app\Controllers\Home.php on line 13
+#0 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message', NULL)
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2021-09-17 19:53:08 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\Progra Web 2\app\Controllers\Home.php on line 13
+#0 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message', NULL)
+#1 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#2 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#6 {main}
+CRITICAL - 2021-09-17 19:53:23 --> Undefined variable: username
+#0 C:\wamp64\www\Progra Web 2\app\Views\welcome_message.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 221, Array)
+#1 C:\wamp64\www\Progra Web 2\system\View\View.php(214): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\Progra Web 2\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\Progra Web 2\system\Common.php(1092): CodeIgniter\View\View->render('welcome_message', Array, true)
+#4 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message')
+#5 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#6 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#10 {main}
+CRITICAL - 2021-09-17 19:53:26 --> Undefined variable: username
+#0 C:\wamp64\www\Progra Web 2\app\Views\welcome_message.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 221, Array)
+#1 C:\wamp64\www\Progra Web 2\system\View\View.php(214): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\Progra Web 2\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\Progra Web 2\system\Common.php(1092): CodeIgniter\View\View->render('welcome_message', Array, true)
+#4 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message')
+#5 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#6 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#10 {main}
+CRITICAL - 2021-09-17 19:59:06 --> Array to string conversion
+#0 C:\wamp64\www\Progra Web 2\app\Views\Auth\login.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\P...', 6, Array)
+#1 C:\wamp64\www\Progra Web 2\system\View\View.php(214): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\Progra Web 2\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\Progra Web 2\system\Common.php(1092): CodeIgniter\View\View->render('auth/Login.php', Array, true)
+#4 C:\wamp64\www\Progra Web 2\app\Controllers\Auth.php(21): view('auth/Login.php')
+#5 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Auth->Login()
+#6 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#10 {main}
+CRITICAL - 2021-09-17 20:22:21 --> Array to string conversion
+#0 C:\wamp64\www\Progra Web 2\app\Views\welcome_message.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\P...', 12, Array)
+#1 C:\wamp64\www\Progra Web 2\system\View\View.php(214): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\Progra Web 2\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\Progra Web 2\system\Common.php(1092): CodeIgniter\View\View->render('welcome_message', Array, true)
+#4 C:\wamp64\www\Progra Web 2\app\Controllers\Home.php(13): view('welcome_message', Array)
+#5 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#6 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Progra Web 2\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Progra Web 2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\Progra Web 2\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#10 {main}
