@@ -2,14 +2,21 @@
 
 namespace App\Controllers;
 use App\Models\ProfileModel;
+use App\Controllers\Auth;
+
 
 class Home extends BaseController {
 
     public function index() {
 
-        $profile = new ProfileModel();
-        $data = $profile->find(18);
+        $auth = new Auth();
 
-        return view('welcome_message', $data);
+        if(!is_null($data = $auth->GetUserData())){
+
+            $data['auth'] = true;
+            return view('welcome_message', $data);
+        }
+
+        return view('welcome_message');
     }
 }

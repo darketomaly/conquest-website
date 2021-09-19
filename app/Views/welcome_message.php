@@ -7,8 +7,11 @@
 	<h1>ABOUT THIS PAGE</h1>
 
     <?php
-        $_sex = [0 => "male", 1 => "female"];
-        echo "Hello ".$_sex[$sex]." ".$name.", you were born in: ".$birth;
+        if(isset($sex)){
+
+            $_sex = [0 => "male", 1 => "female"];
+            echo "Hello ".$_sex[$sex]." ".$name.", you were born in: ".$birth;
+        }
     ?>
 
 	<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>

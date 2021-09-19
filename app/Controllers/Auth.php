@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\UserModel;
+use App\Models\ProfileModel;
 
 class Auth extends BaseController {
 
@@ -9,7 +10,8 @@ class Auth extends BaseController {
 
     public function __construct(){
 
-        $this->session = service('session');
+        if(session_status() !== PHP_SESSION_ACTIVE)
+            $this->session = service('session');
     }
 
     public function index() {
@@ -18,15 +20,65 @@ class Auth extends BaseController {
 
     public function Login(){
 
+        if($this->logged_in())
+            return redirect()->to('/Home');
+
         return view('auth/Login.php');
     }
 
     public function AttemptLogin(){
 
-        var_dump($_POST);
+        //session_destroy();
+        //$this->session->destroy();
+        if($this->logged_in())
+            return redirect()->to('/Home');
+
+        //$this->session->destroy();
+
+        //var_dump($_POST);
+        $loginCredentials = $this->request->getPost(['email', 'password']);
+        $user = new UserModel();
+
+        $query = $user->where('email', $loginCredentials['email'])->find();
+        if(empty($query))
+            return redirect()->back()->withInput()->with('message', 'El correo no existe');
+
+        $userData = $query[0];
+        //var_dump($query);
+
+        if(!password_verify($loginCredentials['password'], $userData['hash_pass']))
+            return redirect()->back()->withInput()->with('message', 'Las credenciales no coinciden con el correo');
+
+        //session_start();
+        //$this->session = $this->session();
+
+        $array = [
+            'username' => $userData['username'],
+            'email' => $userData['email'],
+            'logged_in' => true
+        ];
+
+        $this->session->set($array);
+        return redirect()->to('/');
+
+        //$_SESSION['user'] = $userData['id'];
+        //$this->session->user = $userData['id'];
+        //$this->session->remove('user');
+    }
+
+    public function logged_in(){
+
+        if($this->session->get('logged_in'))
+            return true;
+
+        return false;
     }
 
     public function Register(){
+
+        if($this->logged_in())
+            return redirect()->to('/Home');
+
         return view('auth/register.php');
     }
 
@@ -60,5 +112,27 @@ class Auth extends BaseController {
             return redirect()->back()->withInput()->with('errors', $profile->errors());
 
         return redirect()->to('/login')->with('message', 'Registro exitoso');
+    }
+
+    public function GetUserData(){
+
+        if($this->logged_in()){
+
+            $user = new UserModel();
+            $query = $user->where('email', $this->session->get('email'))->find();
+            $_id = $query[0]['id'];
+
+            $profile = new ProfileModel();
+            $data = $profile->find($_id);
+            return $data;
+        }
+
+        return null;
+    }
+
+    public function log_out(){
+
+        $this->session->destroy();
+        return redirect()->to('/Home');
     }
 }

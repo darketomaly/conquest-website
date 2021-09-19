@@ -19,7 +19,28 @@
             <li class="menu-toggle">
                 <button onclick="toggleMenu();">&#9776;</button>
             </li>
-            <li class="menu-item hidden"><a href="#">Home</a></li>
+            <li class="menu-item hidden"><a href="/">Home</a></li>
+
+            <?php
+                if(isset($auth)){
+
+                   ?> <li class="menu-item hidden"><a href="/log_out">Log out</a>
+            </li><?php
+
+                } else {
+
+                    ?>
+                    <li class="menu-item hidden"><a href="/login">Login</a>
+                    </li>
+
+                    <li class="menu-item hidden"><a href="/register">Register</a>
+                    </li>
+                    <?php
+
+                }
+            ?>
+
+
             <li class="menu-item hidden"><a href="https://codeigniter4.github.io/userguide/" target="_blank">Docs</a>
             </li>
             <li class="menu-item hidden"><a href="https://forum.codeigniter.com/" target="_blank">Community</a></li>
