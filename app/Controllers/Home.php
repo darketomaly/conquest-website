@@ -4,10 +4,11 @@ namespace App\Controllers;
 use App\Models\ProfileModel;
 use App\Controllers\Auth;
 
-
 class Home extends BaseController {
 
     public function index() {
+
+        //ss
 
         $auth = new Auth();
 

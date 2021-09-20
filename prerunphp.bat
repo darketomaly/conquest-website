@@ -1,2 +1,2 @@
-cd C:\wamp64\www\Progra Web 2
+cd C:\wamp64\www\conquest-remastered-website
 php spark serve
