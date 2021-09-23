@@ -8,16 +8,16 @@ class Home extends BaseController {
 
     public function index() {
 
-        //ss
-
         $auth = new Auth();
 
         if(!is_null($data = $auth->GetUserData())){
 
             $data['auth'] = true;
-            return view('welcome_message', $data);
+            //return view('welcome_message', );
         }
 
-        return view('welcome_message');
+        $data['title'] = "__Home";
+
+        return view('welcome_message', $data);
     }
 }
