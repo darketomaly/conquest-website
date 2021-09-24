@@ -1,3 +1,7 @@
+<?php
+    require APPPATH.'ThirdParty\steamauth\steamauth.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,21 +30,15 @@
             </li>
 
             <?php
-                if(isset($auth)){
+                if(!isset($_SESSION['steamid'])){
 
-                   ?> <li class="menu-item hidden"><a href="/log_out">Log out</a>
-            </li><?php
+                    echo loginbutton("rectangle");
 
-                } else {
+                }  else {
 
-                    ?>
-                    <li class="menu-item hidden"><a href="/login">Login</a>
-                    </li>
-
-                    <li class="menu-item hidden"><a href="/register">Register</a>
-                    </li>
-                    <?php
-
+                    include APPPATH.'ThirdParty\steamauth\userInfo.php';
+                    //Protected content
+                    logoutbutton(); //Logout Button
                 }
             ?>
         </ul>

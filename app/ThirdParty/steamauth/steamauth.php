@@ -15,14 +15,18 @@ function loginbutton($buttonstyle = "square") {
 }
 
 if (isset($_GET['login'])){
+
 	require 'openid.php';
 	try {
 		require 'SteamConfig.php';
 		$openid = new LightOpenID($steamauth['domainname']);
-		
-		if(!$openid->mode) {
-			$openid->identity = 'https://steamcommunity.com/openid';
-			header('Location: ' . $openid->authUrl());
+
+        if(!$openid->mode) {
+
+            $openid->identity = 'https://steamcommunity.com/openid';
+            header('Location: ' . $openid->authUrl());
+            echo $openid->authUrl();
+
 		} elseif ($openid->mode == 'cancel') {
 			echo 'User has canceled authentication!';
 		} else {
@@ -70,6 +74,6 @@ if (isset($_GET['update'])){
 	exit;
 }
 
-// Version 4.0
+// Version 3.2
 
 ?>
