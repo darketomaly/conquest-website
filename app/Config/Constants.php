@@ -33,6 +33,7 @@ defined('COMPOSER_PATH') || define('COMPOSER_PATH', ROOTPATH . 'vendor/autoload.
  | Provide simple ways to work with the myriad of PHP functions that
  | require information to be in seconds.
  */
+
 defined('SECOND') || define('SECOND', 1);
 defined('MINUTE') || define('MINUTE', 60);
 defined('HOUR')   || define('HOUR', 3600);

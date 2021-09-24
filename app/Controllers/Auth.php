@@ -10,8 +10,8 @@ class Auth extends BaseController {
 
     public function __construct(){
 
-        if(session_status() !== PHP_SESSION_ACTIVE)
-            $this->session = service('session');
+        //if(session_status() !== PHP_SESSION_ACTIVE)
+        //    $this->session = service('session');
     }
 
     public function index() {
@@ -132,7 +132,10 @@ class Auth extends BaseController {
 
     public function log_out(){
 
-        $this->session->destroy();
+        //$this->session->destroy();
+        session_start();
+        unset($_SESSION['steamid']);
+        unset($_SESSION['steam_uptodate']);
         return redirect()->to('/Home');
     }
 }

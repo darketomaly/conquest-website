@@ -1,5 +1,20 @@
 <?= view('Base/Header')?>
 
+<?php
+
+    require APPPATH.'ThirdParty\steamauth\steamauth.php';
+
+    if(!isset($_SESSION['steamid'])){
+
+        echo loginbutton("rectangle");
+
+    }  else {
+
+        include APPPATH.'ThirdParty\steamauth\userInfo.php';
+        //Protected content
+        logoutbutton(); //Logout Button
+    }
+?>
 <!-- CONTENT -->
 
 <section>
