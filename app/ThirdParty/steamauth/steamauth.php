@@ -24,7 +24,16 @@ if (isset($_GET['login'])){
         if(!$openid->mode) {
 
             $openid->identity = 'https://steamcommunity.com/openid';
-            header('Location: ' . $openid->authUrl());
+
+            ?>
+            <script>
+                window.location.replace('<?php echo $openid->authUrl(); ?>');
+            </script>
+
+            <?php
+
+            //header('Location: ' . $openid->authUrl());
+            //redirect()->to($openid->authUrl());
             echo $openid->authUrl();
 
 		} elseif ($openid->mode == 'cancel') {

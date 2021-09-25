@@ -3,12 +3,7 @@
 <!-- CONTENT -->
 
 <section>
-    <?php
-        if(isset($_SESSION['steamid'])){
-            include APPPATH.'ThirdParty\steamauth\userInfo.php';
-            echo $steamprofile['profileurl'];
-        }
-    ?>
+
 
 	<h1>TOP PLAYERS</h1>
 

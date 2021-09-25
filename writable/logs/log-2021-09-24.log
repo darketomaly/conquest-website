@@ -231,3 +231,18 @@ CRITICAL - 2021-09-24 19:44:33 --> Undefined index: steam_lastlogoff
 #13 C:\wamp64\www\conquest-remastered-website\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #14 C:\wamp64\www\conquest-remastered-website\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\c...')
 #15 {main}
+CRITICAL - 2021-09-24 19:48:57 --> syntax error, unexpected ';', expecting ')'
+#0 C:\wamp64\www\conquest-remastered-website\system\View\View.php(214): include()
+#1 C:\wamp64\www\conquest-remastered-website\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\conquest-remastered-website\system\Common.php(1092): CodeIgniter\View\View->render('Base/Header', Array, true)
+#3 C:\wamp64\www\conquest-remastered-website\app\Views\welcome_message.php(1): view('Base/Header')
+#4 C:\wamp64\www\conquest-remastered-website\system\View\View.php(214): include('C:\\wamp64\\www\\c...')
+#5 C:\wamp64\www\conquest-remastered-website\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\wamp64\www\conquest-remastered-website\system\Common.php(1092): CodeIgniter\View\View->render('welcome_message', Array, true)
+#7 C:\wamp64\www\conquest-remastered-website\app\Controllers\Home.php(21): view('welcome_message', Array)
+#8 C:\wamp64\www\conquest-remastered-website\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#9 C:\wamp64\www\conquest-remastered-website\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\wamp64\www\conquest-remastered-website\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\conquest-remastered-website\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\wamp64\www\conquest-remastered-website\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\c...')
+#13 {main}

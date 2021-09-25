@@ -36,9 +36,18 @@
 
                 }  else {
 
-                    include APPPATH.'ThirdParty\steamauth\userInfo.php';
                     //Protected content
-                    logoutbutton(); //Logout Button
+                    include APPPATH.'ThirdParty\steamauth\userInfo.php';
+                    ?>
+
+                    <li class ="menu-item hidden">
+                        <img class="header-steam-avatar" src="<?php echo $steamprofile['avatarfull'] ?>">
+                        <span> <?php echo $steamprofile['personaname']; ?> </span>
+                    </li>
+
+                    <li class ="menu-item hidden"><?php
+                        logoutbutton();?>
+                    </li><?php
                 }
             ?>
         </ul>

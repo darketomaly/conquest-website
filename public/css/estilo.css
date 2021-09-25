@@ -98,6 +98,12 @@ header .heroe h2 {
     font-weight: 300;
 }
 
+.header-steam-avatar{
+
+    width: 35px;
+    border-radius: 50%;
+}
+
 section {
 
     background-color: #232525;
