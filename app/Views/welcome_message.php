@@ -2,45 +2,46 @@
 
 <!-- CONTENT -->
 
-<section>
+<div class ="flex-wrapper">
+    <section>
+        <h1>TOP PLAYERS</h1>
 
+        <table style="width: 35%; min-width: 200px; border-collapse: collapse">
 
-	<h1>TOP PLAYERS</h1>
-
-    <table style="width: 35%; border-collapse: collapse">
-
-        <thead>
-        <tr>
-            <th scope="col">Rank</th>
-            <th scope="col">Player</th>
-            <th scope="col">Score</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <td></td>
-        <td></td>
-
-        <?php
-        for ($i = 0; $i < 25; $i++){ ?>
+            <thead>
             <tr>
-                <th style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><?= $i+1?></th>
-                <td>Lorem Ipsum</td>
-                <td style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;"><?= rand(15, 34586) ?></td>
+                <th scope="col">Rank</th>
+                <th scope="col">Player</th>
+                <th scope="col">Score</th>
             </tr>
-        <?php
-        }?>
-        </tbody>
-    </table>
+            </thead>
 
-    <?php
-        if(isset($sex)){
+            <tbody>
+            <td></td>
+            <td></td>
 
-            $_sex = [0 => "male", 1 => "female"];
-            echo "Hello ".$_sex[$sex]." ".$name.", you were born in: ".$birth;
-        }
-    ?>
+            <?php
 
-</section>
-<!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
-<?= view('Base/Footer')?>
+            //var_dump($topaccounts);
+
+            for ($i = 1; $i < sizeof($topaccounts); $i++){ ?>
+                <tr>
+                    <th style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><?= $i?></th>
+
+                    <td>
+                        <img src="<?php echo $topaccounts[$i]['profilePicture'] ?>">
+                        <?php
+                        echo $topaccounts[$i]['username'] ?>
+                    </td>
+                    <td style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;"><?php echo $topaccounts[$i]['score'] ?></td>
+                </tr>
+                <?php
+            }?>
+            </tbody>
+        </table>
+
+    </section>
+    <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
+    <?= view('Base/Footer')?>
+</div>
+

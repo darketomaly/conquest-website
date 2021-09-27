@@ -1,22 +1,25 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\ProfileModel;
 use App\Controllers\Auth;
+use App\Models\MatchesDataModel;
 
 class Home extends BaseController {
 
     public function index() {
 
-        //$auth = new Auth();
-
-        //if(!is_null($data = $auth->GetUserData())){
-
-            //$data['auth'] = true;
-            //return view('welcome_message', );
-        //}
-
         $data['title'] = "__Home";
+        require APPPATH.'ThirdParty\steamauth\steamauth.php';
+
+        if(isset($_SESSION['steamid'])){
+
+            $auth = new Auth();
+            $auth->CheckSteamDataOnDatabase();
+        }
+
+        $matchesData = new MatchesDataModel();
+        $data['topaccounts'] = $matchesData->GetTopAccounts();
+
 
         return view('welcome_message', $data);
     }

@@ -1,5 +1,4 @@
 <?php
-    require APPPATH.'ThirdParty\steamauth\steamauth.php';
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +41,9 @@
 
                     <li class ="menu-item hidden">
                         <img class="header-steam-avatar" src="<?php echo $steamprofile['avatarfull'] ?>">
-                        <span> <?php echo $steamprofile['personaname']; ?> </span>
+                        <span>
+                            <?php echo $_SESSION['display_name']?>
+                        </span>
                     </li>
 
                     <li class ="menu-item hidden"><?php

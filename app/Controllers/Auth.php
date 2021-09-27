@@ -138,4 +138,16 @@ class Auth extends BaseController {
         unset($_SESSION['steam_uptodate']);
         return redirect()->to('/Home');
     }
+
+    //Attempts to register user
+    //Sets the display name session variable
+    //If no display name is set on database it defaults to steam's display name
+    public function CheckSteamDataOnDatabase(){
+
+        $user = model('UserModel');
+        include APPPATH.'ThirdParty\steamauth\userInfo.php';
+
+        $m_tmp = $user->GetUser($steamprofile['steamid'], $steamprofile['personaname']);
+        $_SESSION['display_name'] = $m_tmp ? $m_tmp : $steamprofile['personaname'];
+    }
 }

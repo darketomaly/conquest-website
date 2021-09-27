@@ -18,6 +18,12 @@ if (isset($_GET['login'])){
 
 	require 'openid.php';
 	try {
+
+        if(isset($_SESSION['steamid'])){
+
+            return;
+        }
+
 		require 'SteamConfig.php';
 		$openid = new LightOpenID($steamauth['domainname']);
 

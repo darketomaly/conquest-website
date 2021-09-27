@@ -1,40 +1,33 @@
 <?php
 
 namespace App\Models;
-
 use CodeIgniter\Model;
-
+use App\Models\MatchesDataModel;
 
 class UserModel extends Model {
 
     protected $table      = 'user';
-    protected $primaryKey = 'id';
-
+    protected $primaryKey = 'steamid';
     protected $useAutoIncrement = true;
-
     protected $returnType     = 'array';
-    //protected $useSoftDeletes = true;
-
-    protected $allowedFields = ['username', 'email', 'hash_pass'];
-
-    //protected $useTimestamps = false;
-    //protected $createdField  = 'created_at';
-    //protected $updatedField  = 'updated_at';
-    //protected $deletedField  = 'deleted_at';
-
-    //protected $validationRules    = ['username' => 'required|alpha_numeric',
-    //                                'email' => 'required|valid_email|is_unique[user.email]'];
-    //protected $validationMessages = [];
+    protected $allowedFields = ['steamid', 'display_name'];
     protected $skipValidation     = false;
 
-    public function RegisterUser(array $data){
+    //Register and/or fetch
+    public function GetUser($_steamid){
 
-        $data['hash_pass'] = password_hash($data['password'], PASSWORD_DEFAULT);
-        if(!$this->save($data)){
-            return false;
-        }
+        $m_fetch = $this->find($_steamid);
 
+        if(!$m_fetch){ //register
 
-        return true;
+            $data['steamid'] = $_steamid;
+            $this->insert($data);
+
+            $matchesData = new MatchesDataModel();
+            $matchesData->Register($_steamid);
+
+            return null;
+
+        } else return $m_fetch['display_name'];
     }
 }
