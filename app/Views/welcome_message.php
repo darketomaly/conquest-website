@@ -21,15 +21,13 @@
             <td></td>
 
             <?php
-
             //var_dump($topaccounts);
-
             for ($i = 1; $i < sizeof($topaccounts); $i++){ ?>
                 <tr>
                     <th style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><?= $i?></th>
 
                     <td>
-                        <img src="<?php echo $topaccounts[$i]['profilePicture'] ?>">
+                        <img class="header-steam-avatar" src="<?php echo $topaccounts[$i]['profilePicture'] ?>">
                         <?php
                         echo $topaccounts[$i]['username'] ?>
                     </td>

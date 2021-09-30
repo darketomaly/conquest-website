@@ -48,6 +48,9 @@ class MatchesDataModel extends Model {
     //Used by the hiscores. We need to retrieve display name data since we don't have access
     function GetPlayerDataFromId($steamid){
 
+        //To do
+        //Make a single api call with top player's ids instead
+
         $_apiKey = "A1BA08A219DA7727BEB6CFF70CB5C4CA";
         $content = file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=".$_apiKey."&steamids=".$steamid);
         $content = json_decode($content, true);

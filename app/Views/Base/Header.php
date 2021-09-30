@@ -28,10 +28,19 @@
                 <button onclick="toggleMenu();">&#9776;</button>
             </li>
 
+            <li class="menu-item hidden">
+                <a href="/gallery">Gallery</a>
+            </li>
+
             <?php
                 if(!isset($_SESSION['steamid'])){
 
-                    echo loginbutton("rectangle");
+                    ?>
+                    <li class="menu-item hidden">
+                        <a href="?login">Login</a>
+                    </li>
+                    <?php
+                    //echo loginbutton("rectangle");
 
                 }  else {
 
@@ -40,14 +49,16 @@
                     ?>
 
                     <li class ="menu-item hidden">
-                        <img class="header-steam-avatar" src="<?php echo $steamprofile['avatarfull'] ?>">
-                        <span>
-                            <?php echo $_SESSION['display_name']?>
-                        </span>
+                        <a href="/profile">
+                            <img class="header-steam-avatar" src="<?php echo $steamprofile['avatarmedium'] ?>">
+                            <span>
+                                <?php echo $_SESSION['display_name']?>
+                            </span>
+                        </a>
                     </li>
 
-                    <li class ="menu-item hidden"><?php
-                        logoutbutton();?>
+                    <li class="menu-item hidden">
+                        <a href="?logout">Logout</a>
                     </li><?php
                 }
             ?>
