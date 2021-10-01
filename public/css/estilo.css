@@ -175,6 +175,52 @@ td > * {
 }
 /*----*/
 
+/*Profile*/
+
+input[type=text] {
+    margin-top: 3px;
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    background-color: #e1e1e1;
+}
+
+input[type=submit] {
+    margin-top: 5px;
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.animated {
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 1s;animation-duration: 1s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+/*----*/
+
 .further {
     background-color: rgb(128, 128, 128);
 }

@@ -151,4 +151,19 @@ class Auth extends BaseController {
         $_SESSION['display_name'] = $m_tmp ? $m_tmp : $steamprofile['personaname'];
         $_SESSION['using_steam_display_name'] = !$m_tmp;
     }
+
+    public function UpdateDisplayName(){
+
+        $user = model('UserModel');
+
+        session_start(); //wasn't loading session data for some reason?
+        if($user->UpdateDisplayName($_POST)){
+
+            $_SESSION['m_message'] = "Saved your data";
+            return redirect()->to('../profile');
+
+        } else {
+
+        }
+    }
 }

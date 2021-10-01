@@ -30,4 +30,10 @@ class UserModel extends Model {
 
         } else return $m_fetch['display_name'];
     }
+
+    public function UpdateDisplayName($data){
+
+        $this->save($data);
+        return true;
+    }
 }

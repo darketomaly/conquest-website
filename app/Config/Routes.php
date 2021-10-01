@@ -37,6 +37,9 @@ $routes->post('/login', 'Auth::AttemptLogin');
 $routes->get('/register', 'Auth::Register');
 $routes->post('/register', 'Auth::AttemptRegister');
 $routes->get('/log_out', 'Auth::log_out');
+
+$routes->post('/profile', 'Auth::UpdateDisplayName');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
