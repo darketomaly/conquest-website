@@ -8,8 +8,7 @@ class Home extends BaseController {
 
     public function index() {
 
-
-        $data['title'] = "__Home";
+        $data['title'] = "Conquest Remastered";
         require APPPATH.'ThirdParty\steamauth\steamauth.php';
 
         if(isset($_SESSION['steamid'])){
@@ -20,7 +19,6 @@ class Home extends BaseController {
 
         $matchesData = new MatchesDataModel();
         $data['topaccounts'] = $matchesData->GetTopAccounts();
-
 
         return view('welcome_message', $data);
     }

@@ -147,7 +147,8 @@ class Auth extends BaseController {
         $user = model('UserModel');
         include APPPATH.'ThirdParty\steamauth\userInfo.php';
 
-        $m_tmp = $user->GetUser($steamprofile['steamid'], $steamprofile['personaname']);
+        $m_tmp = $user->GetUser($steamprofile['steamid']);
         $_SESSION['display_name'] = $m_tmp ? $m_tmp : $steamprofile['personaname'];
+        $_SESSION['using_steam_display_name'] = !$m_tmp;
     }
 }

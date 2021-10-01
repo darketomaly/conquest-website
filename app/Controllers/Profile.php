@@ -6,7 +6,7 @@ class Profile extends BaseController {
 
     public function index() {
 
-        $data['title'] = "__Home";
+        $data['title'] = "Profile";
         require APPPATH.'ThirdParty\steamauth\steamauth.php';
 
         if(isset($_SESSION['steamid'])){

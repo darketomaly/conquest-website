@@ -1,0 +1,24 @@
+CRITICAL - 2021-10-01 12:49:42 --> Undefined variable: topaccounts
+#0 C:\wamp64\www\conquest-remastered-website\app\Views\welcome_message.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\c...', 22, Array)
+#1 C:\wamp64\www\conquest-remastered-website\system\View\View.php(214): include('C:\\wamp64\\www\\c...')
+#2 C:\wamp64\www\conquest-remastered-website\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\conquest-remastered-website\system\Common.php(1092): CodeIgniter\View\View->render('welcome_message', Array, true)
+#4 C:\wamp64\www\conquest-remastered-website\app\Controllers\Home.php(24): view('welcome_message', Array)
+#5 C:\wamp64\www\conquest-remastered-website\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#6 C:\wamp64\www\conquest-remastered-website\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\conquest-remastered-website\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\conquest-remastered-website\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\conquest-remastered-website\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\c...')
+#10 {main}
+CRITICAL - 2021-10-01 14:23:16 --> Undefined index: display_name
+#0 C:\wamp64\www\conquest-remastered-website\app\Views\profile_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\c...', 7, Array)
+#1 C:\wamp64\www\conquest-remastered-website\system\View\View.php(214): include('C:\\wamp64\\www\\c...')
+#2 C:\wamp64\www\conquest-remastered-website\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\conquest-remastered-website\system\Common.php(1092): CodeIgniter\View\View->render('profile_view', Array, true)
+#4 C:\wamp64\www\conquest-remastered-website\app\Controllers\Profile.php(18): view('profile_view', Array)
+#5 C:\wamp64\www\conquest-remastered-website\system\CodeIgniter.php(802): App\Controllers\Profile->index()
+#6 C:\wamp64\www\conquest-remastered-website\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 C:\wamp64\www\conquest-remastered-website\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\conquest-remastered-website\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\conquest-remastered-website\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\c...')
+#10 {main}

@@ -1,3 +1,4 @@
+<div class ="flex-wrapper"> </div>
 <footer>
     <div class="environment">
         <p>Page rendered in {elapsed_time} seconds</p>

@@ -16,6 +16,11 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
+
+body{
+
+    min-height: 100vh; display: flex; flex-direction: column;
+}
 header {
     background-color: rgb(35, 35, 35);
     color: rgb(217, 217, 217);
@@ -34,6 +39,7 @@ header ul {
 header li {
     display: inline-block;
 }
+
 header li a {
     border-radius: 5px;
     color: rgb(217, 217, 217);
@@ -41,6 +47,11 @@ header li a {
     height: 44px;
     text-decoration: none;
 }
+
+.header-profile {
+    background-color: #1c1b1b;
+}
+
 header li.menu-item a {
     border-radius: 5px;
     margin: 5px 0;
@@ -111,18 +122,21 @@ section {
     border-radius: 15px;
     max-width: 1100px;
     padding: 2.5rem 1.75rem 3.5rem 1.75rem;
-
-
 }
 
 /*  Used to send the footer to the bottom.
     Sections and footer should be inside
 */
 .flex-wrapper {
+
+    flex-grow: 1;
+
+    /*
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
+     */
 }
 /*---*/
 section h1 {
@@ -151,9 +165,13 @@ tr:nth-child(even) {
     background-color: #111111;
 }
 
-td:not(:first-child) {
-    padding-top:3px;
-    padding-bottom:3px;
+.hiscores-table td:not(:first-child){
+    padding-top:6px;
+    padding-bottom:6px;
+}
+
+td > * {
+    vertical-align : middle;
 }
 /*----*/
 

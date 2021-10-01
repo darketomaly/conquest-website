@@ -1,3 +1,5 @@
+<?= view('Base/Header')?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,3 +84,5 @@
 	</div>
 </body>
 </html>
+
+<?= view('Base/Footer')?>
